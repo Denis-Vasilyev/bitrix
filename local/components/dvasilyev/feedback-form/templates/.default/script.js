@@ -11,7 +11,7 @@ setTimeout(() => {
                         EMAIL: this.elements.validationEMail.value,
                         PHONE: this.elements.validationPhone.value,
                         QUESTION: this.elements.validationQuestion.value,
-                        SESSID_5: this.elements.sessid_5.value
+                        SESSID: document.querySelector('#' + this.id + ' > input[name=sessid]').value
                     }
                 }
                 console.log(data);

@@ -28,7 +28,7 @@ class CFBForm extends CBitrixComponent implements Controllerable
     public function sendFormAction($formData)
     {
         //CSRF-защита
-        if (bitrix_sessid() !== $formData['SESSID_5']) {
+        if (bitrix_sessid() !== $formData['SESSID']) {
             return "Пожалуста, обновите страницу.";
         }
 
